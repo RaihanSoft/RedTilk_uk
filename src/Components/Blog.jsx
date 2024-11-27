@@ -1,3 +1,5 @@
+import { FaArrowAltCircleUp } from "react-icons/fa"
+
 const Blog = () => {
     return (
         <div>
@@ -19,14 +21,15 @@ const Blog = () => {
                     <p className="text-white/60 mt-4" >We brought all the Remix goodies over to React Router and made improvements in the process.
                         Now it&apos;s time to bring those improved APIs back over to Remix where they started!</p>
 
-                    <div className="mt-44">
+                    <div className="mt-44 relative ">
                         <p>  Collaboration Tools</p>
                         <p>  Collaboration Tools</p>
+                        <div className="absolute top-5 right-5 text-4xl " ><FaArrowAltCircleUp /></div>
                     </div>
 
                 </div>
             </div>
-            <div className="flex items-center justify-center" >   <button className="btn mt-10" >Read More</button></div>
+            <div className="flex items-center justify-center" >   <button className="btn mt-10 text-white border-white bg-black " >Read More</button></div>
         </div>
     )
 }
