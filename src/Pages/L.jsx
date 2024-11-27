@@ -7,7 +7,7 @@ import Superpowers from "../Components/Superpowers"
 
 const L = () => {
   return (
-    <div className="bg-red-950 w-11/12 mx-auto px-2  ">
+    <div className="bg-red-950 px-2  ">
       {/* Banner  */}
       <Banner />
       <Brands />
