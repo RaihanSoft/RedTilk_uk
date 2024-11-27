@@ -1,5 +1,6 @@
 import Banner from "../Components/Banner"
 import Brands from "../Components/Brands"
+import Offers from "../Components/Offers"
 
 const L = () => {
   return (
@@ -7,6 +8,7 @@ const L = () => {
       {/* Banner  */}
       <Banner />
       <Brands />
+      <Offers />
 
     </div>
   )
