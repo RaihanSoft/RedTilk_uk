@@ -1,7 +1,7 @@
 
 const Reviews = () => {
   return (
-    <div>
+    <div className=" text-white text-center text-5xl font-bold">
       Reviews
     </div>
   )

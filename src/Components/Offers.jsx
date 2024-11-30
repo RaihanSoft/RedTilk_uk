@@ -42,7 +42,7 @@ const Offers = () => {
   return (
     <div ref={offerRef} className="mt-16 px-6">
       <h2 className="text-center text-4xl text-white font-bold mb-8 animate__animated animate__fadeIn">
-    What we offer
+        What we offer
       </h2>
       <div className="flex items-center justify-center text-white/60 mb-8">
         <p className="border-2 border-red-700 text-center inline-block px-4 py-2 rounded-full">
@@ -62,8 +62,8 @@ const Offers = () => {
             <h2 className="text-center text-3xl font-bold z-10 relative mb-6 flex items-center justify-center gap-4">
               {item.icon} {item.title}
             </h2>
-            <div className="flex justify-end items-center">
-              <div className="rounded-tl-2xl shadow-2xl border-2 border-red-600 p-6 text-white w-72 h-64 py-12 flex flex-col bg-red-700 text-lg">
+            <div className="flex justify-end items-end  ">
+              <div className="rounded-tl-2xl ml-10 border-l-2 border-t-2 border-red-900 shadow-3xl p-6 text-white w-72 h-64 py-12 flex flex-col bg-gradient-to-b from-[#520002] to-[#2b0002] text-lg">
                 <p>✔️ Service 1</p>
                 <p>✔️ Service 2</p>
                 <p>✔️ Service 3</p>

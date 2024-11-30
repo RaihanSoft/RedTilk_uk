@@ -10,7 +10,7 @@ const Superpowers = () => {
       </h2>
       
       <Marquee gradient={false} speed={50}>
-        <div className="flex items-center justify-around space-x-52 py-10">
+        <div className="flex items-center justify-around  space-x-10 sm:space-x-52 py-10">
           <div><FaJava size={50} color="white" /></div>
           <div><FaPastafarianism size={50} color="white" /></div>
           <div><FaDatabase size={50} color="white" /></div>

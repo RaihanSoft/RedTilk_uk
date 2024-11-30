@@ -2,7 +2,7 @@
 
 const Services = () => {
   return (
-    <div>
+    <div className=" text-white text-center text-5xl font-bold">
       Services
     </div>
   )
