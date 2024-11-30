@@ -2,7 +2,7 @@
 
 const ReserveCall = () => {
     return (
-        <div className="min-h-screen bg-[#200000] flex items-center justify-center px-6">
+        <div className="min-h-screen  flex items-center justify-center px-6">
             <div className="w-full max-w-4xl grid grid-cols-1 lg:grid-cols-2 gap-6 text-white">
                 {/* Left Section */}
                 <div className="space-y-6">
@@ -22,7 +22,7 @@ const ReserveCall = () => {
                 </div>
 
                 {/* Right Section (Form) */}
-                <div className="bg-[#3B0000] p-6 rounded-lg shadow-lg">
+                <div className=" p-6 rounded-lg shadow-lg">
                     <h2 className="text-2xl font-semibold mb-4">Tell us about yourself.</h2>
                     <form>
                         <div className="mb-4">

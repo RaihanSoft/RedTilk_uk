@@ -4,9 +4,15 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class', // Dark mode enabled via class
   theme: {
     extend: {},
   },
-  // eslint-disable-next-line no-undef
-  plugins: [require('daisyui')],
+  plugins: [
+    // eslint-disable-next-line no-undef
+    require('daisyui'), // DaisyUI plugin
+  ],
+  daisyui: {
+    themes: ["light", "dark"], // Enable both light and dark themes
+  },
 }

@@ -1,7 +1,32 @@
 import { NavLink } from "react-router-dom";
-
+import { useState, useEffect } from "react";
+import { MdDarkMode, MdOutlineDarkMode } from "react-icons/md";
 
 const Navbar = () => {
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    // Toggle Dark Mode
+    const toggleDarkMode = () => {
+        const newDarkMode = !isDarkMode;
+        setIsDarkMode(newDarkMode);
+    
+        if (newDarkMode) {
+            document.documentElement.classList.add("dark"); // Add the dark class
+        } else {
+            document.documentElement.classList.remove("dark"); // Remove the dark class
+        }
+    
+        localStorage.setItem("darkMode", newDarkMode); // Store the preference
+    };
+    
+
+    // Load Dark Mode Preference
+    useEffect(() => {
+        const savedDarkMode = localStorage.getItem("darkMode") === "true";
+        setIsDarkMode(savedDarkMode);
+        document.documentElement.classList.toggle("dark", savedDarkMode); // Apply saved dark mode
+    }, []);
+
     const links = (
         <>
             <li>
@@ -23,7 +48,7 @@ const Navbar = () => {
     );
 
     return (
-        <div className="navbar bg-[#200000] text-white w-full">
+        <div className="navbar text-white w-full sticky top-0  backdrop-blur-lg z-50 ">
             <div className="navbar-start">
                 {/* Logo */}
                 <a className="btn btn-ghost normal-case text-xl flex items-center">
@@ -41,10 +66,19 @@ const Navbar = () => {
                 <ul className="menu menu-horizontal px-4 space-x-4">{links}</ul>
             </div>
 
-            {/* Start a project button with moon icon */}
-            <div className="navbar-end">
-                <a className="btn text-white bg-red-600 hover:bg-red-700 border-none flex items-center">
-                    <i className="fas fa-moon mr-2"></i> {/* Moon Icon */}
+            {/* End: Dark Mode Toggle and Start a Project Button */}
+            <div className="navbar-end flex items-center space-x-4">
+                {/* Dark Mode Toggle Button */}
+                <button
+                    className="btn btn-ghost text-white text-3xl"
+                    onClick={toggleDarkMode}
+                    aria-label="Toggle Dark Mode"
+                >
+                    {isDarkMode ? <MdDarkMode /> : <MdOutlineDarkMode />}
+                </button>
+
+                {/* Start a Project Button */}
+                <a className="hidden sm:flex btn text-white bg-red-600 hover:bg-red-700 border-none">
                     Start a project
                 </a>
             </div>

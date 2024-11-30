@@ -1,10 +1,10 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-[#200000] text-white py-10 px-6">
+    <footer className=" text-white py-10 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Newsletter Section */}
-        <div className="bg-[#3B0000] p-6 rounded-lg flex flex-col lg:flex-row items-center justify-between mb-10">
+        <div className=" p-6 rounded-lg flex flex-col lg:flex-row items-center justify-between mb-10">
           <div className="mb-4 lg:mb-0">
             <h3 className="text-2xl font-semibold">Newsletter</h3>
             <p>Be the first one to know about insights, technologies and innovations.</p>
